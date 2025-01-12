@@ -1,0 +1,12 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url(https://assets.ccbp.in/frontend/react-js/congrats-card-bg.png);
+}
+
+.card {
+    border-radius: 8px;
+    width: 32rem;
+}
