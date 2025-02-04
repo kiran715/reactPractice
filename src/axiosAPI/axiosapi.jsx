@@ -31,6 +31,11 @@ const Axiosapi = () => {
         console.log(apiData);
     }
 
+    const putDemo = async () => {
+        const res = await api.put("/realestate/1", { priceRange: "1000000" });
+        alert("data updated");
+    };
+
     return (
         <div>
             <p>Axios api</p>
@@ -43,6 +48,11 @@ const Axiosapi = () => {
                 onClick={postData}
                 className="px-4 py-2 bg-blue-400 rounded-md">
                 post data
+            </button>
+            <button
+                onClick={putDemo}
+                className="px-4 py-2 bg-blue-400 rounded-md">
+                update data
             </button>
         </div>
     );

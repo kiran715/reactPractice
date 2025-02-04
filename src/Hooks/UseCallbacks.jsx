@@ -21,7 +21,7 @@ const UseCallbacks = () => {
                 onChange={(e) => setNumber(parseInt(e.target.value))}
             />
             <button onClick={() => setDark((curr) => !curr)}>
-                Toogle theme
+                Toggle theme
             </button>
             <List getItems={getItems} />
         </div>
